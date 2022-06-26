@@ -1,0 +1,89 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+  </style>
+
+</head>
+
+<audio id="audio" controls style="display:none">
+  <source src="pew.wav" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+
+
+<center>
+
+<body style="background-color:black;>
+
+  <!-- red container div -->
+  <div style="position: relative; display: inline-block">
+    <!-- smaller red container div -->
+
+      <!-- player health -->
+      <div
+        style="
+          position: relative;
+          width: 0%;
+          display: flex;
+          justify-content: flex-end;
+          border-top: 0px solid white;
+          border-left: 0px solid white;
+          border-bottom: 0px solid white;
+        "
+      >
+
+<div style="background-color: red; height: 0px; width: 0%"></div>
+        <div
+          id="playerHealth"
+          style="
+            position: absolute;
+            background: #818cf8;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 0%;
+          "
+        ></div>
+      </div>
+
+
+<!-- timer -->
+      <div
+        id="timer"
+      >
+      
+      </div>
+
+
+    <canvas></canvas>
+
+</div>
+
+  <script src="js/audio.js"></script>
+  <script src="js/howler.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js"></script>
+
+
+</body>
+</center>
